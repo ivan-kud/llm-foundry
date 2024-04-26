@@ -2,8 +2,9 @@
 # SPDX-License-Identifier: Apache-2.0
 
 from composer.algorithms import (Alibi, GatedLinearUnits, GradientClipping,
-                                 LowPrecisionLayerNorm, SAM)
+                                 LowPrecisionLayerNorm)
 
+from llmfoundry.algorithms.sam import SAM
 from llmfoundry.registry import algorithms
 
 algorithms.register('gradient_clipping', func=GradientClipping)
